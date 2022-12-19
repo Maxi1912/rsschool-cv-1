@@ -9,7 +9,8 @@
 
 :root {
 	--primary-color: #ff7613;
-	--text-color: #727171;
+	--text-color: #9e938f;
+    --code-color: #d7dfdc;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
 	color: white;
 }
 
-/* profile */
 .profile_container {
 	display: flex;
 	gap: 2rem;
@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .profile_profileImg img{
 vertical-align: middle;
     width: 80%;
@@ -40,7 +41,7 @@ vertical-align: middle;
 }
 
 .profile_name_firstName {
-	color: rgb(155, 153, 153);
+	color: var(--text-color);
 	font-weight: 200;
 	font-size: 2em;
 	text-transform: uppercase;
@@ -54,9 +55,61 @@ vertical-align: middle;
 	text-transform: uppercase;
 	display: block;
 }
-.profile_title {
+.profile_profession {
 	font-size: 1.5em;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
+.standart_section {
+    margin: 5%;
+}
+.standart_section h2{
+    color: var(--primary-color);
+
+}
+.standart_section ul{
+    display: flex;
+    justify-content: center;
+
+    display: inline-block;
+    font-size: smaller;
+    padding-right: 1.5em;
+}
+.standart_section li{
+ margin-top: 0.75em;
+}
+.education_period {
+    color: var(--text-color);
+    display: inline;
+    font-size: smaller;
+    font-style: italic;
+    padding-right: 1em;
+}
+
+.profile_container {
+	display: flex;
+	gap: 2rem;
+    margin: 5%;
+}
+
+.main_container {
+    display: flex;
+    gap: 2rem;
+    margin: 5%;
+}
+
+.container_left_side {
+    width: auto;
+    display: block;
+    justify-content: center;
+
+
+}
+.container_right_side {
+    display: inline-block;
+    width: min-content;
+}
+code { 
+    width: min-content;
+}
